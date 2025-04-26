@@ -4,7 +4,7 @@ from chatbot import chatbot_mental  # Atau chatbot_mental_health kalau konteksny
 
 # Sidebar navigasi
 st.sidebar.title("Navigasi")
-page = st.sidebar.radio("Pilih halaman", ["Home", "Chatbot"])
+page = st.sidebar.radio("Pilih halaman", ["Home", "Chatbot", "Screening"])
 
 # Routing halaman
 if page == "Home":
@@ -12,3 +12,6 @@ if page == "Home":
     pass
 elif page == "Chatbot":
     chatbot_mental()
+elif page == "Screening":
+    screening_mental()
+
